@@ -60,8 +60,8 @@ function getRandomGreeting() {
     "Drift Boss is pretty fun",
     "The skeleton with the sword. HE FOUND YOU!",
     "I spent too much time making these",
-    "the real question is, Are You Hero?"
-    "batalaa!"
+    "the real question is, Are You Hero?",
+    "batalaa!",
     "AaaaAaAaaA...  mmmm Batalaa"
    ];
     var randomIndex = Math.floor(Math.random() * greetings.length);
