@@ -16,7 +16,7 @@
     body {
         font-family: Arial, sans-serif;
         /* Updated background properties */
-        background-image: url('7022736498194049352.jpg');
+        background-image: url('https://batalaa.onrender.com/7022736498194049352.jpg');
         background-repeat: repeat;
         background-attachment: fixed; /* Keeps the background from scrolling with the content */
         background-size: auto; /* Keeps the original image size for tiling */
@@ -46,15 +46,45 @@
         }
 
         /* NEW SEARCH STYLES */
-        .search-container {
-            position: sticky;
-            top: 0;
-            backdrop-filter: blur(5px);
-            padding: 20px;
-            z-index: 900;
-            display: flex;
-            justify-content: center;
-        }
+        /* UPDATED SEARCH STYLES */
+.search-container {
+    position: sticky;
+    top: 0;
+    /* Changed from solid #4c464c to semi-transparent */
+    background: rgba(76, 70, 76, 0.6); 
+    /* Frosted glass effect to separate text from background */
+    backdrop-filter: blur(10px); 
+    padding: 20px;
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#gameSearch {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 25px;
+    /* Slightly transparent border */
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    /* Semi-transparent background for the input itself */
+    background: rgba(0, 0, 0, 0.2); 
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#gameSearch::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#gameSearch:focus {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
 
         #gameSearch {
             width: 100%;
@@ -80,12 +110,42 @@
         .sidebar-btn:hover { background: #2b282b; transform: scale(1.05); }
         .sidebar-btn.empty { opacity: 0.4; cursor: default; }
         .main-content { margin-left: 100px; flex: 1; padding: 20px; }
-        h1, h2 { color: #ffffff; text-align: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
-        .letter-section { margin-bottom: 40px; padding: 0 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
-        .letter-header { color: white; font-size: 32px; font-weight: bold; margin-bottom: 15px; border-bottom: 3px solid rgba(255, 255, 255, 0.3); }
+h1, h2 { 
+    color: #ffffff; 
+    text-align: center; 
+    /* Enhanced shadow for better contrast against background */
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8); 
+    padding: 10px;
+    margin: 10px 0;
+}.letter-section {
+    margin-bottom: 40px;
+    padding: 25px; /* Added more padding */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    /* The "Glass" effect */
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}        .letter-header { color: white; font-size: 32px; font-weight: bold; margin-bottom: 15px; border-bottom: 3px solid rgba(255, 255, 255, 0.3); }
         .buttons-container { display: flex; flex-direction: column; gap: 10px; align-items: center; }
-        input[type="button"] { background: #ffffff; border: none; padding: 15px 30px; font-size: 16px; border-radius: 8px; cursor: pointer; width: 100%; max-width: 600px; text-align: left; }
-    </style>
+input[type="button"] {
+    background: rgba(255, 255, 255, 0.9); /* 90% opacity */
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    transition: background 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background: rgba(255, 255, 255, 1); /* Becomes solid on hover */
+}    </style>
 </head>
 
 <body>
