@@ -13,7 +13,7 @@ function getRandomGreeting() {
     "guess what! vvmvvh",
     "Cold as ice!",
     "Made in the US!",
-    "Made by ",
+    "Made by Schlopis Industries",
     "Reload the page NOW!",
     "WARNING: You may lose your pocket chimp if you proceed!",
     "Do you bite your ice cream?",
